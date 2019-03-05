@@ -1,25 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import NavBar from './components/NavBar';
+import ImgCard from './components/ImgCard';
+import image from "./image.json";
+
 import './App.css';
 
 class App extends Component {
+  // Setting this.state.image to the image json array
+  state = {
+    count: 0,
+    image
+  };
+
+  // handleIncrement increases this.state.count by 1
+  handleIncrement = () => {
+    // We always use the setState method to update a component's state
+    this.setState({ count: this.state.count + 1 });
+  };
+
+
+
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className="container">
+          <NavBar />
+          <Header />
+          <div className="img-container">
+            {this.state.image.map(image => (
+              <ImgCard
+                id={image.id}
+                name={image.name}
+                image={image.image}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Arya",
+    "image": "./assets/images/arya.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Brienne",
+    "image": "./assets/images/brienne.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Bronn",
+    "image": "./assets/images/bronn.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Daenerys",
+    "image": "./assets/images/daenerys.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Jon",
+    "image": "./assets/images/jon.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Jorah",
+    "image": "./assets/images/jorah.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Littlefinger",
+    "image": "./assets/images/littlefinger.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Ned",
+    "image": "./assets/images/ned.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Olenna",
+    "image": "./assets/images/olenna.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Samwell",
+    "image": "./assets/images/samwell.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Theon",
+    "image": "./assets/images/theon.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Tyrion",
+    "image": "./assets/images/tyrion.jpeg"
+  }
+]

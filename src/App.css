@@ -90,12 +90,3 @@ h2 {
     width: 1100px;
   }
 }
-
-@keyframes .img-container {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,18 +1,18 @@
 import React from 'react'
 
-function NavBar() {
+function NavBar(props) {
   return (
     <div>
       <nav className="navbar">
         <ul>
           <li className="brand">
-            <a href="/">Clicky Game</a>
+            <a href="/">CLICKY GAME</a>
           </li>
           <li>
-            Guess Text
+            {props.message}
                 </li>
           <li>
-            Score: # | Top Score: #
+            Score: {props.score} | Top Score: {props.topScore}
                 </li>
         </ul>
       </nav>

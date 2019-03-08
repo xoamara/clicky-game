@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import ImgCard from './components/ImgCard';
+import Footer from './components/Footer';
 import image from "./image.json";
 import './App.css';
 
@@ -60,7 +61,9 @@ class App extends Component {
                 handleIncrement={this.handleIncrement}
               />
             ))}
+            
           </div>
+          <Footer />
         </div>
       </div>
     );

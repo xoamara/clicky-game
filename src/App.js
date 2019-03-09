@@ -61,7 +61,6 @@ class App extends Component {
                 handleIncrement={this.handleIncrement}
               />
             ))}
-            
           </div>
           <Footer />
         </div>

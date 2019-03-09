@@ -9,12 +9,20 @@ import './App.css';
 class App extends Component {
   // Setting this.state.image to the image json array
   state = {
-    score: 0,
+    score: 0 ,
     topScore: 0,
     image,
     imageArray: [],
     message: ''
   };
+
+  handleTopScore = () => {
+    if (this.state.score > this.state.topScore) {
+      this.setState({
+        topScore: this.state.score
+      })
+    }
+  }
 
   // handleIncrement increases this.state.count by 1
   handleIncrement = event => {
@@ -30,17 +38,19 @@ class App extends Component {
       })
 
     } else {
+      const tempScore = this.state.score + 1;
       imageArray.push(imageCheck);
       this.setState({
-        score: this.state.score + 1,
+        score: tempScore,
         message: "You guessed correctly!",
         image: this.state.image.sort((a, b) => {
           return 0.5 - Math.random();
         }),
-        // topScore: this.state.score +1
-      });
+      }, this.handleTopScore);
     }
   }
+
+
 
   render() {
     return (
@@ -50,6 +60,7 @@ class App extends Component {
             score={this.state.score}
             topScore={this.state.topScore}
             message={this.state.message}
+            handleTopScore={this.handleTopScore}
           />
           <Header />
           <div className="img-container">
